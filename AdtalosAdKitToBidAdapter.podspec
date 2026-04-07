@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AdtalosAdKitToBidAdapter"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "AdtalosAdKit 广告 SDK 的ToBid Adapter"
 
   spec.description  = <<-DESC
@@ -33,6 +33,10 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'AdtalosAdKit', '~> 1.0.2'
   spec.dependency 'ToBid-iOS', '~> 4.7.3'
+  
+  spec.pod_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
+  }
 
   spec.swift_versions = ["5.7"]
 

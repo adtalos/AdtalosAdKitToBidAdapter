@@ -1,0 +1,4 @@
+framework module AdtalosAdKitToBidAdapter {
+  header "AdtalosAdKitToBidAdapter-Swift.h"
+  requires objc
+}
